@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: white;
+  padding: 15px 20px;
+}
+
+.header a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Home Section */
+.home {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.shop-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

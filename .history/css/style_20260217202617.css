@@ -1,0 +1,277 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #E3EFD3;
+  color: #0D2B1D;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0D2B1D;
+  color: #E3EFD3;
+  padding: 15px 20px;
+}
+
+.header a {
+  color: #AEC3B0;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.header a:hover {
+  color: white;
+}
+
+.cart {
+  font-weight: bold;
+}
+
+.home {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.shop-btn {
+  padding: 12px 26px;
+  font-size: 16px;
+  background: #345635;
+  color: #E3EFD3;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.shop-btn:hover {
+  background: #6B8F71;
+}
+
+.Hero-name{
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-size: 48px;
+    color: #345635;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 30px;
+}
+
+
+.product-card {
+  background: #AEC3B0;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  margin: 4px 0;
+}
+.rating {
+  color: #DAA520; 
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+button {
+  background: #345635;
+  color: #E3EFD3;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6B8F71;
+}
+.controls {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-selected {
+  background: #E3EFD3;
+  color: #0D2B1D;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 500;
+  border: 1px solid #AEC3B0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 180px;
+  transition: all 0.2s ease;
+}
+
+.dropdown-selected:hover {
+  background: #ffffff;
+  border-color: #6B8F71;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #AEC3B0;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  display: none;
+  overflow: hidden;
+  z-index: 50;
+}
+
+.dropdown-options div {
+  padding: 12px 16px;
+  color: #0D2B1D;
+  transition: background 0.15s ease;
+}
+
+.dropdown-options div:hover {
+  background: #E3EFD3;
+}
+
+.dropdown-options {
+  backdrop-filter: blur(8px);
+}
+.detail-container {
+  padding: 60px 80px;
+}
+
+.detail-card {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 60px;
+
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 40px;
+
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+
+
+
+.detail-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #F6F8F5;
+  padding: 20px;
+}
+
+
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail-info h2 {
+  font-size: 32px;
+  margin: 0;
+  color: #0D2B1D;
+}
+
+
+
+.detail-price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #345635;
+}
+
+
+
+.detail-rating {
+  font-size: 18px;
+  color: #DAA520;
+}
+
+
+
+.detail-category {
+  font-size: 15px;
+  color: #6B8F71;
+}
+
+
+
+.detail-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 16px;
+}
+
+.detail-buttons button {
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+
+
+.detail-buttons button:first-child {
+  background: #345635;
+  color: #E3EFD3;
+}
+
+.detail-buttons button:first-child:hover {
+  background: #0D2B1D;
+}
+
+
+
+.detail-buttons button:last-child {
+  background: transparent;
+  border: 2px solid #345635;
+  color: #345635;
+}
+
+.detail-buttons button:last-child:hover {
+  background: #345635;
+  color: #E3EFD3;
+}

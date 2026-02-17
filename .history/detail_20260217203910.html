@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Detail — GLARIX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>GLARIX Eyewear</h1>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="listing.html">Products</a>
+    </nav>
+
+    <div class="cart" onclick="goToCart()">
+  <span class="cart-icon">🛒</span>
+  <span id="cart-count" class="cart-badge">0</span>
+</div>
+
+
+  </header>
+
+  <main class="detail-container">
+
+    <div class="detail-card">
+
+      <img id="detail-img" src="" alt="Product">
+
+      <div class="detail-info">
+        <h2 id="detail-name" class="detail-name"></h2>
+
+        <p id="detail-price" class="detail-price"></p>
+
+        <p id="detail-rating" class="detail-rating"></p>
+
+        <p id="detail-category" class="detail-category"></p>
+
+        <div class="detail-buttons">
+          <button onclick="addToCart()">Add to Cart</button>
+          <button onclick="buyNow()">Buy Now</button>
+        </div>
+
+      </div>
+
+
+    </div>
+    <section class="related-section">
+
+  <h2>Related Products</h2>
+
+  <div class="carousel-container">
+    <div id="related-products" class="carousel-track"></div>
+  </div>
+
+</section>
+
+
+
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/detail.js"></script>
+
+</body>
+</html>
