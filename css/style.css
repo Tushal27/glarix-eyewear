@@ -28,7 +28,7 @@ body {
   color: white;
 }
 .hero {
-  height: 70vh;
+  height: 100vh;
 
   background-image: url("../images/hero.png");
   background-size: cover;
